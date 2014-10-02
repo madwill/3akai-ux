@@ -1,50 +1,106 @@
 {
-  "name": "3akai-ux",
-  "description": "Open Academic Environment (OAE) Front-end",
-  "version": "7.2.0",
-  "homepage": "http://www.oaeproject.org",
+  "name": "Hilary",
+  "description": "Sakai OAE Back-end",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sakaiproject/Hilary",
   "author": {
-    "name": "The Apereo Foundation",
-    "email": "oae-dev@collab.sakaiproject.org"
+     "name": "The Sakai Foundation",
+     "email": "oae-dev@collab.sakaiproject.org"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oaeproject/3akai-ux.git"
+    "url": "git://github.com/sakaiproject/Hilary.git"
   },
   "bugs": {
-    "url": "https://github.com/oaeproject/3akai-ux/issues"
+    "url": "https://github.com/sakaiproject/Hilary/issues"
   },
   "licenses": [
-    {
-      "type": "ECLv2",
-      "url": "http://opensource.org/licenses/ecl2.php"
-    }
+     {
+       "type": "ECLv2",
+       "url": "http://opensource.org/licenses/ecl2.php"
+     }
   ],
   "dependencies": {
-    "oae-core": ""
+    "amqp": "latest",
+    "awssum": "latest",
+    "bunyan": "latest",
+    "cas-sfu": "git://github.com/nicolaasmatthijs/node-cas-sfu.git",
+    "clone": "latest",
+    "connect": "latest",
+    "connect-redis": "latest",
+    "dox": "latest",
+    "elasticsearchclient": "latest",
+    "express": "latest",
+    "gm": "latest",
+    "helenus": "latest",
+    "mkdirp": "latest",
+    "oae-authentication": "",
+    "oae-authz": "",
+    "oae-config": "",
+    "oae-content": "",
+    "oae-context": "",
+    "oae-doc": "",
+    "oae-logger": "",
+    "oae-principals": "",
+    "oae-profiles": "",
+    "oae-rest": "",
+    "oae-search": "",
+    "oae-telemetry": "",
+    "oae-tenants": "",
+    "oae-tests": "",
+    "oae-ui": "",
+    "oae-util": "",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-http": "latest",
+    "passport-google": "latest",
+    "passport-openid": "latest",
+    "passport-saml": "git://github.com/nicolaasmatthijs/passport-saml.git",
+    "passport-twitter": "latest",
+    "passport-facebook": "latest",
+    "readdirp": "latest",
+    "recaptcha-async": "latest",
+    "redis": "latest",
+    "request": "latest",
+    "shelljs": "latest",
+    "shortid": "latest",
+    "temp": "latest",
+    "timezone-js": "latest",
+    "underscore": "latest",
+    "validator": "latest",
+    "watch": "latest"
   },
   "devDependencies": {
     "grunt": "latest",
-    "grunt-cli": "latest",
-    "grunt-contrib-clean": "latest",
+    "grunt-simple-mocha": "0.2",
+    "grunt-clean": "latest",
     "grunt-contrib-copy": "latest",
-    "grunt-contrib-qunit": "latest",
-    "grunt-contrib-requirejs": "latest",
-    "grunt-exec": "latest",
-    "grunt-ghost": "latest",
-    "grunt-git-describe": "latest",
-    "grunt-ver": "git://github.com/oaeproject/grunt-ver.git#v0.2.3-hilary-0.2",
-    "oae-release-tools": "git://github.com/oaeproject/oae-release-tools",
-    "optimist": "latest",
-    "properties-parser": "latest",
-    "readdirp": "latest",
-    "shelljs": "latest",
-    "underscore": "latest"
+    "grunt-text-replace": "latest",
+    "mocha": "latest",
+    "optimist": "latest"
+  },
+  "optionalDependencies": {
+    "hiredis": "latest"
   },
   "bundleDependencies": [
-    "oae-core"
+    "oae-authentication",
+    "oae-authz",
+    "oae-config",
+    "oae-content",
+    "oae-context",
+    "oae-doc",
+    "oae-logger",
+    "oae-principals",
+    "oae-profiles",
+    "oae-rest",
+    "oea-search",
+    "oae-telemetry",
+    "oae-tenants",
+    "oae-tests",
+    "oae-ui",
+    "oae-util"
   ],
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.8"
   }
 }
